@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About – SafetySpotCM</title>
+  <link rel="stylesheet" href="../static/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="nav-logo">
+      <span class="logo-icon">⬡</span>
+      <span class="logo-text">SafetySpot<span class="logo-accent">CM</span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="{{ url_for('home') }}">Home</a></li>
+      <li><a href="#download">Download</a></li>
+    </ul>
+    <a href="#download" class="nav-cta">Get the App</a>
+  </nav>
+
+  <!-- ABOUT HERO -->
+  <section class="about-hero">
+    <div class="hero-bg-text">ABOUT</div>
+    <div class="about-hero-content">
+      <div class="section-label">About Us</div>
+      <h1 class="hero-title">
+        Safety for<br/>
+        <span class="hero-accent">Everyone</span>
+      </h1>
+      <p class="hero-sub">We're on a mission to make emergency response accessible to everyone — regardless of location, connectivity, or resources.</p>
+    </div>
+  </section>
+
+  <!-- MISSION -->
+  <section class="mission" id="about">
+    <div class="section-inner">
+      <div class="section-label">Our Mission</div>
+      <h2 class="section-title">Built for <span class="accent">critical moments</span></h2>
+      <p class="mission-text">SafetySpotCM was created with a simple belief: everyone deserves a way to call for help when it matters most. Whether you're in a remote area without cell service, in an emergency situation where every second counts, or simply need peace of mind — we're here for you.</p>
+      <p class="mission-text">Our app works completely offline using SMS, Bluetooth, and Wi-Fi Direct to ensure your emergency alert reaches the right people. No internet required. No subscriptions. No barriers.</p>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="values">
+    <div class="section-inner">
+      <div class="section-label">Why SafetySpotCM</div>
+      <h2 class="section-title">Safety without <span class="accent">boundaries</span></h2>
+      <div class="features-grid">
+        <div class="feat-card">
+          <div class="feat-icon-wrap"><span class="feat-icon">🌍</span></div>
+          <h3>Works Everywhere</h3>
+          <p>Offline-first design means you can send alerts even in areas with no cell coverage or internet connectivity.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon-wrap"><span class="feat-icon">🔒</span></div>
+          <h3>Privacy First</h3>
+          <p>Your location data stays on your device until you choose to share it. We never sell or share your personal information.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon-wrap"><span class="feat-icon">💚</span></div>
+          <h3>Completely Free</h3>
+          <p>100% free forever. No hidden fees, no premium tiers, no ads. Everyone deserves access to safety tools.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon-wrap"><span class="feat-icon">⚡</span></div>
+          <h3>Instant Response</h3>
+          <p>Triple-press your power button and alert your emergency contacts and nearby users in seconds.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEET THE TEAM -->
+  <section class="team" id="team">
+    <div class="section-inner">
+      <div class="section-label">Meet the Team</div>
+      <h2 class="section-title">The people behind <span class="accent">SafetySpotCM</span></h2>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-photo">
+            <img src="../static/images/Brenda.jpeg" alt="Nganso Brenda">
+          </div>
+          <h3 class="team-name">Nganso Brenda</h3>
+          <p class="team-role">Founder & CEO</p>
+          <p class="team-quote">"Everyone deserves to feel safe, no matter where they are."</p>
+        </div>
+        <div class="team-card">
+          <div class="team-photo">
+            <img src="../static/images/Raissa.jpeg" alt="Lankoko Raissa">
+          </div>
+          <h3 class="team-name">Lankoko Raissa</h3>
+          <p class="team-role">Head of Operations</p>
+          <p class="team-quote">"Efficient emergency response can save lives — that's what drives us."</p>
+        </div>
+        <div class="team-card">
+          <div class="team-photo">
+            <img src="../static/images/Yves.jpeg" alt="Yves Ornelie">
+          </div>
+          <h3 class="team-name">Yves Ornelie</h3>
+          <p class="team-role">Technology Lead</p>
+          <p class="team-quote">"Building technology that works when it matters most."</p>
+        </div>
+        <div class="team-card">
+          <div class="team-photo">
+            <img src="../static/images/Pauline.jpeg" alt="Pauline">
+          </div>
+          <h3 class="team-name">Pauline</h3>
+          <p class="team-role">Marketing Director</p>
+          <p class="team-quote">"Spreading awareness so everyone knows help is just a click away."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats-strip">
+    <div class="stat"><span class="stat-num">3×</span><span class="stat-label">Power Button Clicks</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat"><span class="stat-num">0G</span><span class="stat-label">Internet Required</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Free Forever</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat"><span class="stat-num">24/7</span><span class="stat-label">Background Ready</span></div>
+  </div>
+
+  <!-- CTA -->
+  <section class="cta" id="download">
+    <div class="section-inner">
+      <h2 class="section-title">Ready to feel <span class="accent">safer</span>?</h2>
+      <p class="cta-text">Download SafetySpotCM today and give yourself and your loved ones peace of mind.</p>
+      <div class="hero-actions">
+        <a href="#" class="btn-primary">
+           
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.3.17.64.2.96.09l13.02-7.52-2.76-2.76-11.22 10.19zm16.7-10.56L16.6 11.1 3.04.33C2.7.12 2.3.14 2 .37L14.12 12.5l5.76.7zM21.4 10.3L18.56 8.7l-3.02 2.76 3.02 2.76 2.86-1.62c.82-.47.82-1.84-.02-2.3zM3.18.33L14.12 11.5 2 .5C1.7.27 1.3.3 1 .5L3.18.33z"/></svg>
+          Download for Android
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text">SafetySpot<span class="logo-accent">CM</span></span>
+      </div>
+      <p class="footer-tagline">Your life, one click away from help.</p>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#download">Download</a>
+      </div>
+      <p class="footer-copy">© 2026 SafetySpotCM. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

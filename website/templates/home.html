@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SafetySpotCM – Emergency SOS App</title>
+  <link rel="stylesheet" href="../static/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="nav-logo">
+      <span class="logo-icon">⬡</span>
+      <span class="logo-text">SafetySpot<span class="logo-accent">CM</span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#how">How It Works</a></li>
+      <li><a href="#download">Download</a></li>
+      <li><a href="{{ url_for('about') }}">About Us</a></li>
+    </ul>
+    <a href="#download" class="nav-cta">Get the App</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg-text">SOS</div>
+    <div class="hero-content">
+      <div class="hero-badge">🚨 Free · Offline · Always Ready</div>
+      <h1 class="hero-title">
+        Your Life,<br/>
+        <span class="hero-accent">One Click</span><br/>
+        Away From Help
+      </h1>
+      <p class="hero-sub">SafetySpotCM sends emergency alerts, your GPS location, and alerts nearby users — even with zero internet. Triple-click your power button. That's it.</p>
+      <div class="hero-actions">
+        <a href="#" class="btn-primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.3.17.64.2.96.09l13.02-7.52-2.76-2.76-11.22 10.19zm16.7-10.56L16.6 11.1 3.04.33C2.7.12 2.3.14 2 .37L14.12 12.5l5.76.7zM21.4 10.3L18.56 8.7l-3.02 2.76 3.02 2.76 2.86-1.62c.82-.47.82-1.84-.02-2.3zM3.18.33L14.12 11.5 2 .5C1.7.27 1.3.3 1 .5L3.18.33z"/></svg>
+          Download for Android
+        </a>
+      </div>
+    </div>
+    <div class="hero-phone">
+      <div class="phone-frame">
+        <div class="phone-screen">
+          <div class="phone-status">
+            <span>SafetySpotCM</span>
+            <span class="status-dot"></span>
+          </div>
+          <div class="sos-button-preview">
+            <div class="sos-ring sos-ring-3"></div>
+            <div class="sos-ring sos-ring-2"></div>
+            <div class="sos-ring sos-ring-1"></div>
+            <div class="sos-btn-inner">SOS</div>
+          </div>
+          <div class="phone-contacts">
+            <div class="contact-item"><span class="ci-dot"></span> Maman Jeanne</div>
+            <div class="contact-item"><span class="ci-dot"></span> Paul Kameni</div>
+            <div class="contact-item add-more">+ Add Contact</div>
+          </div>
+          <div class="phone-footer-msg">🛰️ GPS Ready · SMS Ready</div>
+        </div>
+        <div class="phone-button"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS STRIP -->
+  <div class="stats-strip">
+    <div class="stat"><span class="stat-num">3×</span><span class="stat-label">Power Button Clicks</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat"><span class="stat-num">0G</span><span class="stat-label">Internet Required</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Free Forever</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat"><span class="stat-num">24/7</span><span class="stat-label">Background Ready</span></div>
+  </div>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="section-label">Core Features</div>
+    <h2 class="section-title">Built for the <span class="accent">worst moments</span></h2>
+    <div class="features-grid">
+      <div class="feat-card feat-large">
+        <div class="feat-icon-wrap"><span class="feat-icon">📡</span></div>
+        <h3>Offline-First</h3>
+        <p>Uses SMS and Bluetooth/Wi-Fi Direct so your alert gets through even with no data, no Wi-Fi, and no signal tower needed for local mesh.</p>
+        <div class="feat-tag">Zero Internet</div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon-wrap"><span class="feat-icon">⚡</span></div>
+        <h3>Instant Trigger</h3>
+        <p>Triple-press your power button — no need to unlock your phone or open any app.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon-wrap"><span class="feat-icon">📍</span></div>
+        <h3>Live GPS Location</h3>
+        <p>Sends your exact coordinates with a Google Maps link to every emergency contact via SMS.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon-wrap"><span class="feat-icon">🔵</span></div>
+        <h3>Mesh Alerts</h3>
+        <p>Pings nearby SafetySpotCM users via Bluetooth to create a local safety network around you.</p>
+      </div>
+      <div class="feat-card feat-large feat-right">
+        <div class="feat-icon-wrap"><span class="feat-icon">🛡️</span></div>
+        <h3>Privacy by Design</h3>
+        <p>Your data never leaves your phone unless you trigger an SOS. No accounts, no cloud, no tracking. Everything stays local.</p>
+        <div class="feat-tag feat-tag-dark">Your Data = Your Control</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how" id="how">
+    <div class="section-label">How It Works</div>
+    <h2 class="section-title">Three steps. <span class="accent">Three seconds.</span></h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">01</div>
+        <div class="step-body">
+          <h3>Set Up Your Contacts</h3>
+          <p>Add emergency contacts and your profile once. The app stays ready in the background — always.</p>
+        </div>
+      </div>
+      <div class="step-line"></div>
+      <div class="step">
+        <div class="step-number">02</div>
+        <div class="step-body">
+          <h3>Triple-Click Power</h3>
+          <p>In any situation, press your power button three times rapidly. No unlock needed. No app to open.</p>
+        </div>
+      </div>
+      <div class="step-line"></div>
+      <div class="step">
+        <div class="step-number">03</div>
+        <div class="step-body">
+          <h3>Alerts Sent Instantly</h3>
+          <p>SMS with your GPS link goes out to all contacts. Nearby users are pinged via mesh. Help is on its way.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD -->
+  <section class="download" id="download">
+    <div class="download-bg-word">SAFE</div>
+    <div class="download-content">
+      <div class="section-label light">Download Now</div>
+      <h2 class="download-title">Be prepared before<br/><span class="download-accent">you need it</span></h2>
+      <p class="download-sub">SafetySpotCM is completely free. No subscription. No ads. No catch. Available for Android and iOS.</p>
+      <div class="download-btns">
+        <a href="#" class="dl-btn dl-google">
+          <div class="dl-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24"><path fill="white" d="M3.18 23.76c.3.17.64.2.96.09l13.02-7.52-2.76-2.76-11.22 10.19zm16.7-10.56L16.6 11.1 3.04.33C2.7.12 2.3.14 2 .37L14.12 12.5l5.76.7zM21.4 10.3L18.56 8.7l-3.02 2.76 3.02 2.76 2.86-1.62c.82-.47.82-1.84-.02-2.3zM3.18.33L14.12 11.5 2 .5C1.7.27 1.3.3 1 .5L3.18.33z"/></svg>
+          </div>
+          <div class="dl-text">
+            <span class="dl-small">Get it on</span>
+            <span class="dl-big">For Android</span>
+          </div>
+        </a>
+      </div>
+      <p class="download-note">Android 8.0+ · iOS 13+ · Flutter-powered</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-logo">
+      <span class="logo-icon">⬡</span>
+      SafetySpot<span class="logo-accent">CM</span>
+    </div>
+    <p class="footer-tagline">Your safety companion. Offline. Free. Always.</p>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Contact</a>
+      <a href="#">Open Source</a>
+    </div>
+    <p class="footer-copy">© 2026 SafetySpotCM. Built to save lives.</p>
+  </footer>
+
+</body>
+</html>

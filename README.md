@@ -1,5 +1,5 @@
 # SafeSpot-CM
-SafeSpot CM is a web-based platform designed to enhance personal safety by providing instant emergency alerts for users in danger. The application ensures rapid communication with authorities and trusted contacts, helping to reduce response times and increase overall safety.
+SafeSpot CM is a mobile app (android) designed to enhance personal safety by providing instant emergency alerts for users in danger. The application ensures rapid communication with authorities and trusted contacts, helping to reduce response times and increase overall safety.
 
 # Login Page
 The login page has been judge unnecessary for SafeSpot CM since this is supposed to be an app with fast and easy access 
